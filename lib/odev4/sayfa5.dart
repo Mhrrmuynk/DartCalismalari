@@ -1,3 +1,4 @@
+import 'package:bootcamp_odevleri/color/colors.dart';
 import 'package:bootcamp_odevleri/odev4/sayfa4.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class _Sayfa5State extends State<Sayfa5> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: new BoxDecoration(color: Colors.grey),
+        decoration: new BoxDecoration(color: gray),
 
         child: Column(
           children: [

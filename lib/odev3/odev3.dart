@@ -10,88 +10,98 @@ class SerbestTasarim extends StatefulWidget {
 class _SerbestTasarimState extends State<SerbestTasarim> {
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Column(
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(20), // Image border
-              child: Image(
-                image: AssetImage("image/otel.png"),
-              ),
-            ),
-            ButtonBar(
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('Button'),
-                  style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("HOTEL",style: TextStyle(fontFamily: "Lobster" ,fontSize: 24),),
+      ),
+      body: ListView(
+        children: [
+          Column(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20), // Image border
+                child: Image(
+                  image: AssetImage("image/otel.png"),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('Button'),
-                  style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 90),
+                child: ButtonBar(
+                  children: [
+                    ElevatedButton(
+
+                      onPressed: () {},
+                      child: Text('1+1',style: TextStyle(fontFamily: "Lobstar"),),
+                      style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('2+1',style: TextStyle(fontFamily: "Lobstar"),),
+                      style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('3+1',style: TextStyle(fontFamily: "Lobster"),),
+                      style: ElevatedButton.styleFrom(shape: StadiumBorder()),
+                    )
+                  ],
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('Button'),
-                  style: ElevatedButton.styleFrom(shape: StadiumBorder()),
-                )
-              ],
-            ),
-            // ListTile(
-            //   title:Text("Unit price /150₺")
-            //
-            // ),
-            Card(
-              clipBehavior: Clip.antiAlias,
-              child: Column(
-                children: [
-                  ListTile(
-                    leading: Icon(Icons.arrow_drop_down_circle),
-                    title: const Text('Card title 1'),
-                    subtitle: Text(
-                      'Secondary Text',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
-                    ),
-                  ),
-                  Image.asset("image/images.jpg"),
-                ],
               ),
-            ),
-            Card(
-              clipBehavior: Clip.antiAlias,
-              child: Column(
-                children: [
-                  ListTile(
-                    leading: Icon(Icons.arrow_drop_down_circle),
-                    title: const Text('Card title 1'),
-                    subtitle: Text(
-                      'Secondary Text',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+              // ListTile(
+              //   title:Text("Unit price /150₺")
+              //
+              // ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                child: Column(
+                  children: [
+                    ListTile(
+                      leading: Icon(Icons.arrow_drop_down_circle),
+                      title: const Text('Card title 1'),
+                      subtitle: Text(
+                        'Secondary Text',
+                        style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
-                      style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        "Greyhound divisively hello coldly wonderfully marginally far upon excluding.",
+                        style: TextStyle(fontFamily: "Inconsolata" ,color: Colors.black.withOpacity(0.6), ),
+                      ),
                     ),
-                  ),
-                  Image.asset("image/images.jpg"),
-                ],
+                    Image.asset("image/images.jpg"),
+                  ],
+                ),
               ),
-            ),
-          ],
-        ),
-      ],
+              Card(
+                clipBehavior: Clip.antiAlias,
+                child: Column(
+                  children: [
+                    ListTile(
+                      leading: Icon(Icons.arrow_drop_down_circle),
+                      title: const Text('Card title 1'),
+                      subtitle: Text(
+                        'Secondary Text',
+                        style: TextStyle(fontFamily: "Inconsolata",color: Colors.black.withOpacity(0.6)),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                        style: TextStyle(fontFamily: "Inconsolata" ,color: Colors.black.withOpacity(0.6)),
+                      ),
+                    ),
+                    Image.asset("image/images.jpg"),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

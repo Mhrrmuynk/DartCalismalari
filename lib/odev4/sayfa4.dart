@@ -1,3 +1,4 @@
+import 'package:bootcamp_odevleri/color/colors.dart';
 import 'package:flutter/material.dart';
 
 class Sayfa4 extends StatefulWidget {
@@ -13,7 +14,7 @@ class _Sayfa4State extends State<Sayfa4> {
     return Scaffold(
 
       body: Container(
-          decoration: new BoxDecoration(color: Colors.yellow),
+          decoration: new BoxDecoration(color:yellow),
           child: Column(
             children: [
               Padding(

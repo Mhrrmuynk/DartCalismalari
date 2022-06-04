@@ -64,6 +64,17 @@ flutter:
   assets:
     - image/
 
+
+
+  fonts:
+    - family: Lobster
+      fonts:
+        - asset: font/Lobster-Regular.ttf
+
+    - family: Inconsolata
+      fonts:
+        - asset: font/Inconsolata.ttf
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
